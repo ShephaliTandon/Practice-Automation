@@ -15,18 +15,18 @@ public class MyntraWebDriver {
 		driver.manage().window().maximize();
 		driver.get("https://www.myntra.com/");
 		
-		//search reebookshoes
+		//search Reebook shoes
 		driver.findElement( By.className("desktop-searchBar")).sendKeys("reebok shoes");
 		
 		//click on search button
 		driver.findElement(By.className("desktop-submit")).click();
 		
 		//Thread.sleep(3000);
-		//inventary line 
-		String inventaryLine = driver.findElement(By.xpath("//span[contains(@class,'title')]")).getText();
+		//inventory line 
+		String inventoryLine = driver.findElement(By.xpath("//span[contains(@class,'title')]")).getText();
 				
-		//print inventary line
-		System.out.println(inventaryLine);
+		//print inventory line
+		System.out.println(inventoryLine);
 		driver.close();
 
 	}
